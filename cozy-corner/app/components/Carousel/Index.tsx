@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect } from "react";
 
 const Carousel = () => {
@@ -19,16 +20,15 @@ const Carousel = () => {
     setActiveIndex((prev) => (prev - 1 + slideCount) % slideCount);
 
   return (
-    <div id="carousel" className="relative w-full" data-carousel="slide">
+    <div id="carousel" className="relative w-full h-full" data-carousel="slide">
       {/* Carousel wrapper */}
-      <div className="relative overflow-hidden rounded-lg w-full md:h-[500px] 2xl:h-[600px]">
+      <div className="relative overflow-hidden rounded-lg w-full h-full">
         {Array.from({ length: slideCount }).map((_, index) => (
           <div
             key={index}
             className={`${
-              activeIndex === index ? "block" : "hidden"
-            } duration-700 ease-in-out`}
-            data-carousel-item
+              activeIndex === index ? "block " : "hidden "
+            } duration-700 ease-in-out `}
           >
             <img
               src={`/carousel-${index + 1}.jpeg`}
