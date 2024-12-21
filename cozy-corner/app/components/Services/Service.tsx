@@ -7,7 +7,7 @@ export function Service() {
       >
         first class service
       </h2>
-      <div className="flex flex-col md:flex-row gap-4 mx-10 my-20 mt-[200px] w-screen">
+      <div className="flex flex-col md:flex-row gap-4 mx-10 my-20 mt-[200px] w-">
         <div className="md:w-1/2">
           <div className="flex flex-row gap-10 pt-20">
             <h2 className="text-xl font-bold">SERVICES</h2>
