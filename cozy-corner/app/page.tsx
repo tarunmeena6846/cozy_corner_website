@@ -1,7 +1,5 @@
 "use client";
-import Image from "next/image";
-import { Index } from "./components/Nav";
-import { Hero } from "./components/Hero/page";
+import Hero from "./components/Hero/hero";
 import { About } from "./components/AboutUs/Index";
 import { Service } from "./components/Services/Service";
 import { Review } from "./components/Review/Review";

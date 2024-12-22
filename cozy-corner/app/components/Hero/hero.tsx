@@ -2,7 +2,9 @@ import Carousel from "../Carousel/Index";
 import { Index } from "../Nav";
 import BlobAnimation from "./BlogAnimation";
 
-export function Hero() {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+
+const Hero = () => {
   return (
     <div className="relative min-h-[120vh] flex flex-col px-4 md:px-20 overflow-hidden">
       {/* Background image with Carousel */}
@@ -30,7 +32,8 @@ export function Hero() {
             <BlobAnimation />
           </div>
           <h2 className="text-4xl md:text-6xl lg:text-8xl leading-tight">
-            The Cozy Corner
+            Dream
+            Stays
           </h2>
           <p className="text-base md:text-lg mt-2">
             From check-in to chill out
@@ -40,3 +43,5 @@ export function Hero() {
     </div>
   );
 }
+
+export default Hero;
